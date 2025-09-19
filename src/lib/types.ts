@@ -20,7 +20,9 @@ export type JSONValue = string | number | boolean | null | JSONObject | JSONArra
 export interface JSONObject {
   [key: string]: JSONValue;
 }
-export interface JSONArray extends Array<JSONValue> {}
+export interface JSONArray extends Array<JSONValue> {
+  // Array interface with JSON values
+}
 
 // Render options for custom renderers
 export interface RenderOptions {
@@ -60,8 +62,18 @@ export type ChangeHandler = (path: string, oldValue: any, newValue: any) => void
 export type ErrorHandler = (error: Error) => void;
 export type SearchMatchHandler = (count: number) => void;
 
+// Performance configuration
+export interface PerformanceConfig {
+  enableVirtualization?: boolean;
+  virtualItemHeight?: number;
+  virtualOverscan?: number;
+  lazyLoadThreshold?: number;
+  debounceDelay?: number;
+  maxInitialRender?: number;
+}
+
 // Configuration types
-export interface ViewerConfig {
+export interface ViewerConfig extends PerformanceConfig {
   editable: boolean;
   showTypes: boolean;
   theme: Theme;
@@ -86,8 +98,6 @@ export interface JSONViewerProps {
   className?: string;
   style?: React.CSSProperties;
 }
-
-
 
 export interface ControlsProps {
   searchQuery: string;
@@ -117,6 +127,14 @@ export interface TreeNodeProps {
   isExpanded?: (path: string) => boolean;
 }
 
+// Extended TreeNode props for virtualization
+export interface VirtualizedTreeNodeProps extends TreeNodeProps {
+  virtualIndex?: number;
+  onMeasure?: (index: number, element: HTMLElement) => void;
+  isVirtual?: boolean;
+  lazyLoad?: boolean;
+}
+
 export interface InlineEditorProps {
   value: JSONValue;
   path: string;
@@ -132,4 +150,38 @@ export interface JSONViewerHandle {
   get: (path: string) => JSONValue;
   set: (path: string, value: JSONValue) => void;
   toJSON: () => JSONValue;
+  // Performance methods
+  enableVirtualization: (enabled: boolean) => void;
+  getPerformanceStats: () => PerformanceStats;
+}
+
+// Performance monitoring
+export interface PerformanceStats {
+  totalNodes: number;
+  renderedNodes: number;
+  searchMatches: number;
+  renderTime: number;
+  memoryUsage?: number;
+}
+
+// Virtualization types
+export interface VirtualItem {
+  index: number;
+  start: number;
+  size: number;
+  end: number;
+}
+
+export interface VirtualizationOptions {
+  itemCount: number;
+  itemSize: number;
+  containerHeight: number;
+  overscan?: number;
+}
+
+export interface VirtualizationResult {
+  virtualItems: VirtualItem[];
+  totalSize: number;
+  scrollElementRef: React.RefObject<HTMLDivElement>;
+  measureElement: (index: number, element: HTMLElement) => void;
 }

@@ -5,7 +5,7 @@ import {
   getChildrenCount,
   buildPath,
   getValueByPath,
-  setValueByPath,
+  // setValueByPath,
   searchInValue,
   searchInKey,
   validateMaxDepth,
