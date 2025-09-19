@@ -1,6 +1,6 @@
 # JSON Viewer React
 
-[![npm version](https://badge.fury.io/js/@locnv2k2/json-viewer-react.svg)](https://badge.fury.io/js/@locnv2k2/json-viewer-react)
+[![npm version](https://badge.fury.io/js/@rio2k2/json-viewer-react.svg)](https://badge.fury.io/js/@rio2k2/json-viewer-react)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 A modern, lightweight React library for displaying and editing JSON data with an interactive tree interface. Perfect for debugging, data visualization, and JSON editing in React applications.
@@ -21,23 +21,23 @@ A modern, lightweight React library for displaying and editing JSON data with an
 ## 📦 Installation
 
 ```bash
-npm install @locnv2k2/json-viewer-react
+npm install @rio2k2/json-viewer-react
 ```
 
 ```bash
-yarn add @locnv2k2/json-viewer-react
+yarn add @rio2k2/json-viewer-react
 ```
 
 ```bash
-pnpm add @locnv2k2/json-viewer-react
+pnpm add @rio2k2/json-viewer-react
 ```
 
 ## 🚀 Quick Start
 
 ```tsx
 import React from 'react';
-import { JSONViewer } from '@locnv2k2/json-viewer-react';
-import '@locnv2k2/json-viewer-react/styles';
+import { JSONViewer } from '@rio2k2/json-viewer-react';
+import '@rio2k2/json-viewer-react/styles';
 
 const data = {
   name: "John Doe",
@@ -106,7 +106,7 @@ Use a ref to access imperative methods:
 
 ```tsx
 import React, { useRef } from 'react';
-import { JSONViewer, JSONViewerHandle } from '@locnv2k2/json-viewer-react';
+import { JSONViewer, JSONViewerHandle } from '@rio2k2/json-viewer-react';
 
 function App() {
   const viewerRef = useRef<JSONViewerHandle>(null);
@@ -255,7 +255,7 @@ import {
   JSONViewerProps,
   NodeMeta,
   JSONPath 
-} from '@locnv2k2/json-viewer-react';
+} from '@rio2k2/json-viewer-react';
 
 interface MyData {
   id: number;

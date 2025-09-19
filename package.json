@@ -1,6 +1,6 @@
 {
-  "name": "@locnv2k2/json-viewer-react",
-  "version": "1.0.0",
+  "name": "@rio2k2/json-viewer-react",
+  "version": "1.0.1",
   "description": "A small, dependency-light React library that renders JSON data as an interactive tree with expand/collapse, search/highlight, copy, and optional inline editing",
   "type": "module",
   "main": "dist/index.cjs.js",
