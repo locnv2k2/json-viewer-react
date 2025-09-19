@@ -1,6 +1,6 @@
 # JSON Viewer React
 
-[![npm version](https://badge.fury.io/js/@your-scope/json-viewer-react.svg)](https://badge.fury.io/js/@your-scope/json-viewer-react)
+[![npm version](https://badge.fury.io/js/@locnv2k2/json-viewer-react.svg)](https://badge.fury.io/js/@locnv2k2/json-viewer-react)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 A modern, lightweight React library for displaying and editing JSON data with an interactive tree interface. Perfect for debugging, data visualization, and JSON editing in React applications.
@@ -21,23 +21,23 @@ A modern, lightweight React library for displaying and editing JSON data with an
 ## 📦 Installation
 
 ```bash
-npm install @your-scope/json-viewer-react
+npm install @locnv2k2/json-viewer-react
 ```
 
 ```bash
-yarn add @your-scope/json-viewer-react
+yarn add @locnv2k2/json-viewer-react
 ```
 
 ```bash
-pnpm add @your-scope/json-viewer-react
+pnpm add @locnv2k2/json-viewer-react
 ```
 
 ## 🚀 Quick Start
 
 ```tsx
 import React from 'react';
-import { JSONViewer } from '@your-scope/json-viewer-react';
-import '@your-scope/json-viewer-react/styles';
+import { JSONViewer } from '@locnv2k2/json-viewer-react';
+import '@locnv2k2/json-viewer-react/styles';
 
 const data = {
   name: "John Doe",
@@ -106,7 +106,7 @@ Use a ref to access imperative methods:
 
 ```tsx
 import React, { useRef } from 'react';
-import { JSONViewer, JSONViewerHandle } from '@your-scope/json-viewer-react';
+import { JSONViewer, JSONViewerHandle } from '@locnv2k2/json-viewer-react';
 
 function App() {
   const viewerRef = useRef<JSONViewerHandle>(null);
@@ -255,7 +255,7 @@ import {
   JSONViewerProps,
   NodeMeta,
   JSONPath 
-} from '@your-scope/json-viewer-react';
+} from '@locnv2k2/json-viewer-react';
 
 interface MyData {
   id: number;
@@ -288,13 +288,13 @@ We welcome contributions! Please see our [Contributing Guide](CONTRIBUTING.md) f
 
 ## 📄 License
 
-MIT © Rio
+MIT © locnv2k2
 
 ## 🔗 Links
 
 - [Demo](https://traelibsctc4-ngloc2002-locs-projects-534330ac.vercel.app)
-- [GitHub](https://github.com/rio/json-viewer-react)
-- [Issues](https://github.com/rio/json-viewer-react/issues)
+- [GitHub](https://github.com/locnv2k2/json-viewer-react)
+- [Issues](https://github.com/locnv2k2/json-viewer-react/issues)
 
 ## Configuration
 

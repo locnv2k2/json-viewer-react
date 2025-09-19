@@ -1,5 +1,5 @@
 {
-  "name": "@rio2k2/json-viewer-react",
+  "name": "@locnv2k2/json-viewer-react",
   "version": "1.0.0",
   "description": "A small, dependency-light React library that renders JSON data as an interactive tree with expand/collapse, search/highlight, copy, and optional inline editing",
   "type": "module",
@@ -33,16 +33,16 @@
     "search",
     "highlight"
   ],
-  "author": "Rio",
+  "author": "locnv2k2",
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/rio/json-viewer-react.git"
+    "url": "https://github.com/locnv2k2/json-viewer-react.git"
   },
   "bugs": {
-    "url": "https://github.com/rio/json-viewer-react/issues"
+    "url": "https://github.com/locnv2k2/json-viewer-react/issues"
   },
-  "homepage": "https://github.com/rio/json-viewer-react#readme",
+  "homepage": "https://github.com/locnv2k2/json-viewer-react#readme",
   "scripts": {
     "dev": "vite",
     "build": "rollup -c",
