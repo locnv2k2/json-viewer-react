@@ -349,3 +349,4 @@ npm run check
 ## License
 
 MIT License - see LICENSE file for details.
+# json-viewer-react
